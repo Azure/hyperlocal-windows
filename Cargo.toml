@@ -1,0 +1,21 @@
+[package]
+name = "hyperlocal-windows"
+version = "0.1.0"
+license = "MIT"
+authors = ["Azure IoT Edge Devs"]
+description = "Hyper bindings for unix domain sockets...on Windows!"
+repository = "https://github.com/Azure/hyperlocal-windows"
+readme = "README.md"
+keywords = ["hyper", "unix", "sockets", "http"]
+exclude = [".gitignore"]
+
+[dependencies]
+futures = "0.1"
+hex = "0.3"
+hyper = "0.12"
+tokio = "0.1"
+tokio-io = "0.1"
+
+[target.'cfg(windows)'.dependencies]
+mio-uds-windows = { git = "https://github.com/Azure/mio-uds-windows.git" }
+tokio-uds-windows = { git = "https://github.com/Azure/tokio-uds-windows.git" }
