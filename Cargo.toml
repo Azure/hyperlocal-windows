@@ -17,5 +17,5 @@ tokio = "0.1"
 tokio-io = "0.1"
 
 [target.'cfg(windows)'.dependencies]
-mio-uds-windows = { git = "https://github.com/Azure/mio-uds-windows.git" }
-tokio-uds-windows = { git = "https://github.com/Azure/tokio-uds-windows.git" }
+mio-uds-windows = { git = "https://github.com/Azure/mio-uds-windows.git", branch = "main" }
+tokio-uds-windows = { git = "https://github.com/Azure/tokio-uds-windows.git", branch = "main" }
